@@ -11,7 +11,10 @@ public class Main {
         Main main = new Main();
         main.someMainMethod();
         Calculator calculator = new Calculator();
+        System.out.println(calculator.plainOldMethod("Coco"));
         int sum = calculator.getSum(21, 21);
+        int product = calculator.getProduct(21, 2);
         System.out.println("The sum is " + sum);
+        System.out.println("The product is " + product);
     }
 }
