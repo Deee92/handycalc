@@ -5,7 +5,13 @@ public class DingoDile {
         System.out.println("Vacuuming");
     }
 
-    public int setNumber() {
-        return 6;
+    /**
+     *
+     * @param a
+     * @param b
+     * @return
+     */
+    public int setNumber(int a, int b) {
+        return a * b + 2;
     }
 }

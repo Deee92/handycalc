@@ -10,4 +10,8 @@ public class DrNitro {
     public void destroyEarth(String when) {
         System.out.println("Destroying earth " + when);
     }
+
+    public float getFloaty(int num) {
+        return num * 1.5F;
+    }
 }

@@ -29,9 +29,9 @@ public class TestCalculator {
     }
 
     @Test
-    public void testWithStub() {
-        when(mockDingoDile.setNumber()).thenReturn(9);
+    public void testWithStub() throws Exception {
+        when(mockDingoDile.setNumber(anyInt(), anyInt())).thenReturn(9);
         assertEquals(22, calculator.getFancySum(6, 7));
-        verify(mockDingoDile, times(1)).setNumber();
+        verify(mockDingoDile, times(1)).setNumber(anyInt(), anyInt());
     }
 }
